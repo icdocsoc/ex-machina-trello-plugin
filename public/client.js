@@ -1,5 +1,12 @@
 const draftEmail = (t, opts) => {
-    console.log('Is this working?????');
+    fetch("https://docsoc-ex-machina.herokuapp.com/trello", {
+        method: "POST",
+
+        headers: {
+            "contentType": "application/json"
+        },
+        body: JSON.stringify(t)
+    })
 };
 
 window.TrelloPowerUp.initialize({
