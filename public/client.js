@@ -9,7 +9,7 @@ const draftEmail = (t, opts) => {
     })
 };
 
-window.TrelloPowerUp.initialize({
+TrelloPowerUp.initialize({
     'card-buttons': function (t, options) {
         return [{
             text: 'Draft Email',
