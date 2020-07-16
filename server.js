@@ -6,9 +6,7 @@ var cors = require('cors');
 // https://nodejs.org/api/process.html#process_process_env
 app.set('port', (process.env.PORT || 5000));
 
-// Allow Trello to make requests
-// https://github.com/expressjs/cors#simple-usage-enable-all-cors-requests
-app.use(cors({ origin: 'https://trello.com' }));
+app.use(cors());
 
 // Serve static files out of the `public` directory
 // https://expressjs.com/en/starter/static-files.html
