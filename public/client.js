@@ -1,4 +1,4 @@
-const draftEmail = (t, opts) => {
+const draftEmail = function (t) {
     fetch("https://docsoc-ex-machina.herokuapp.com/trello", {
         method: "POST",
 
