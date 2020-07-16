@@ -1,6 +1,6 @@
 var draftEmail = function (t, opts) {
     console.log("Test")
-    fetch("https://docsoc-ex-machina.herokuapp.com/trello", {
+    fetch("https://docsoc-ex-machina-trello.herokuapp.com/", {
         method: "POST",
         headers: {
             "contentType": "application/json"
@@ -9,16 +9,11 @@ var draftEmail = function (t, opts) {
     })
 };
 
-var onBtnClick = function (t, opts) {
-    console.log('Someone clicked the button');
-    draftEmail(t, opts);
-};
-
 TrelloPowerUp.initialize({
     'card-buttons': function (t, options) {
         return [{
             text: 'Draft Email',
-            callback: onBtnClick
+            callback: draftEmail
         }];
     }
 });
