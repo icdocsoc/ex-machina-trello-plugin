@@ -1,4 +1,5 @@
 const draftEmail = function (t) {
+    console.log("Test")
     fetch("https://docsoc-ex-machina.herokuapp.com/trello", {
         method: "POST",
         headers: {
