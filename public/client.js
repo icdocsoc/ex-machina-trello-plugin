@@ -1,7 +1,6 @@
 const draftEmail = function (t) {
     fetch("https://docsoc-ex-machina.herokuapp.com/trello", {
         method: "POST",
-
         headers: {
             "contentType": "application/json"
         },

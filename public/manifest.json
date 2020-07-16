@@ -6,6 +6,7 @@
   },
   "author": "Trello Inc",
   "capabilities": [
+    "callback",
     "board-buttons"
   ],
   "connectors": {
